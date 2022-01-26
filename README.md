@@ -1,4 +1,4 @@
-# Instatus Api 
+# Instatus API Test 
 
 In the project, the api test of the instatus.com site was carried out. The site api document page can be accessed at https://instatus.com/help/api.
 
