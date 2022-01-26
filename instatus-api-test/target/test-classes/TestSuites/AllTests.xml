@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AllTestsSuite" verbose="1">
+
+	<test name="StatusPageTests">
+		<classes>
+			<class name="com.instatus.StatusPageTest"></class>
+		</classes>
+	</test>
+	<test name="ComponentTests">
+		<classes>
+			<class name="com.instatus.ComponentTest">
+				<methods>
+					<exclude name="deleteComponentRequest"></exclude>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="IncidentTests">
+		<classes>
+			<class name="com.instatus.IncidentTest"></class>
+		</classes>
+	</test>
+	<test name="DeleteComponentTest">
+		<classes>
+			<class name="com.instatus.ComponentTest">
+				<methods>
+					<include name="deleteComponentRequest"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+	<test name="SubscriberTests">
+		<classes>
+			<class name="com.instatus.SubscriberTest"></class>
+		</classes>
+	</test>
+
+
+</suite>
