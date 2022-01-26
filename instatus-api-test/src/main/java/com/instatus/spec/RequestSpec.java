@@ -9,7 +9,6 @@ public class RequestSpec {
 	String baseUrl = "https://api.instatus.com";
 	String basePath = "/v1";
 	String apiKey = "b6622abd465a28b7f0980dfa3a78921e";
-	String pageId = "ckyt8zadw1466379yllsi76huhb";
 	
 	public RequestSpecification getRequestSpec() {
 		return new RequestSpecBuilder()
