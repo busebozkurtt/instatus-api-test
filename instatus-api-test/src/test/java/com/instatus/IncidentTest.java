@@ -24,7 +24,7 @@ public class IncidentTest extends BaseServiceTest {
 	}
 
 	@Test(priority = 3)
-	public void positiveGetIncidentRequest() {
+	public void getIncidentRequest() {
 		Response response = incident.getIncident(200, StatusPageTest.pageId);
 		assertThat(response.path("id"), equalTo(incident.incidentId));
 	}
